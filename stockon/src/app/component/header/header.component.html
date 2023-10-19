@@ -1,0 +1,45 @@
+<header>
+    <img src="../../../assets/icon/stock-on-logo.svg" alt="Logo StockOn">
+    
+    <div class="link-container">
+        <a routerLink="/">
+            <div [ngClass]="{'selected': isPageActive('/')}" class="step">
+                <img src="../../../assets/icon/stock-on-lista-de-compras.svg" alt="Lista de compras">
+                <p>Lista de compras</p>
+            </div>
+        </a>
+        
+        <a routerLink="/stock">
+            <div [ngClass]="{'selected': isPageActive('stock')}" class="step">
+                <img src="../../../assets/icon/stock-on-estoque.svg" alt="Lista de compras">
+                <p>Estoque</p>
+            </div>
+        </a>
+        
+        <a routerLink="/in-use">
+            <div [ngClass]="{'selected': isPageActive('in-use')}" class="step">
+                <img src="../../../assets/icon/stock-on-em-uso.svg" alt="Lista de compras">
+                <p>Em uso</p>
+            </div>
+        </a>
+
+        <a routerLink="finished">
+            <div [ngClass]="{'selected': isPageActive('finished')}" class="step">
+                <img src="../../../assets/icon/stock-on-finalizado.svg" alt="Lista de compras">
+                <p>Finalizado</p>
+            </div>
+        </a>
+    </div>
+    
+    <div class="link-container">
+        <div class="link">
+            <img src="../../../assets/icon/stock-on-meu-perfil.svg" alt="Lista de compras">
+            <p>Meu perfil</p>
+        </div>
+
+        <div class="link">
+            <img src="../../../assets/icon/stock-on-sair.svg" alt="Lista de compras">
+            <p>Sair</p>
+        </div>
+    </div>
+</header>

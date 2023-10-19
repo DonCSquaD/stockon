@@ -1,0 +1,8 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+div {
+    padding: 4rem 5rem;
+}
