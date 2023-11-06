@@ -1,5 +1,5 @@
 <section>
-    <app-header ngIf="showHeader"></app-header>
+    <app-header *ngIf="showHeader" class="inside"></app-header>
     <div>
         <router-outlet></router-outlet>
     </div>

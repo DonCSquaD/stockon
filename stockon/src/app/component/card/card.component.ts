@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { CardComponent } from '../card/card.component';
+import { Component, OnInit } from '@angular/core';
 import { CardService } from 'src/app/service/card.service';
 
 @Component({
-  selector: 'app-shopping-list',
-  templateUrl: './shopping-list.component.html',
-  styleUrls: ['./shopping-list.component.css']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
 })
-export class ShoppingListComponent {
+export class CardComponent implements OnInit {
 
   data: any[] = [];
 

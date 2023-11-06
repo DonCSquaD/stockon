@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #141E32;
+    --secondary-color: #50B450;
+    --third-color: #000000;
+    --fourth-color: #FFFFFF;
+    --fifth-color: #FF0000;
+}
+
 html {
     font-family: Montserrat;
     font-size: 16px;
@@ -13,6 +21,55 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--fourth-color);
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 1rem 1.2rem;
+    border-radius: .8rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--fourth-color);
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+}
+
+.page-title h2{
+    color: var(--fourth-color);
+}
+
+.page-title {
+    background: var(--third-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 4rem 2rem;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.page-title button {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.page-card {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 85vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width:768px) {

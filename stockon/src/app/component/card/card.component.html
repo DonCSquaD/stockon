@@ -1,0 +1,20 @@
+<div class="card-container" *ngFor="let card of data">
+    <img src="{{ card.thumb }}" alt="product-name">
+    <div class="info">
+        <h3>{{ card.name }}</h3>
+        <p>Marca: {{ card.brand }}</p>
+        <p>Peso: {{ card.weight }}</p>
+        <div class="color">
+            <p>Cor: </p>
+            <div style="background: {{ card.color }}"></div>
+        </div>
+        <p>Modelo: {{ card.model }}</p>
+    </div>
+    <div class="amount">
+        <p>{{ card.amount }}</p>
+        <p>Quantidade</p>
+    </div>
+    <div class="next">
+        <p>Enviar para em uso</p>
+    </div>
+</div>

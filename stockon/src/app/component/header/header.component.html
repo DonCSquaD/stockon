@@ -2,8 +2,8 @@
     <img src="../../../assets/icon/stock-on-logo.svg" alt="Logo StockOn">
     
     <div class="link-container">
-        <a routerLink="/">
-            <div [ngClass]="{'selected': isPageActive('/')}" class="step">
+        <a routerLink="/shopping-list">
+            <div [ngClass]="{'selected': isPageActive('/shopping-list')}" class="step">
                 <img src="../../../assets/icon/stock-on-lista-de-compras.svg" alt="Lista de compras">
                 <p>Lista de compras</p>
             </div>
@@ -11,35 +11,39 @@
         
         <a routerLink="/stock">
             <div [ngClass]="{'selected': isPageActive('stock')}" class="step">
-                <img src="../../../assets/icon/stock-on-estoque.svg" alt="Lista de compras">
+                <img src="../../../assets/icon/stock-on-estoque.svg" alt="Estoque">
                 <p>Estoque</p>
             </div>
         </a>
         
         <a routerLink="/in-use">
             <div [ngClass]="{'selected': isPageActive('in-use')}" class="step">
-                <img src="../../../assets/icon/stock-on-em-uso.svg" alt="Lista de compras">
+                <img src="../../../assets/icon/stock-on-em-uso.svg" alt="Em uso">
                 <p>Em uso</p>
             </div>
         </a>
 
         <a routerLink="finished">
             <div [ngClass]="{'selected': isPageActive('finished')}" class="step">
-                <img src="../../../assets/icon/stock-on-finalizado.svg" alt="Lista de compras">
+                <img src="../../../assets/icon/stock-on-finalizado.svg" alt="Finalizado">
                 <p>Finalizado</p>
             </div>
         </a>
     </div>
     
     <div class="link-container">
-        <div class="link">
-            <img src="../../../assets/icon/stock-on-meu-perfil.svg" alt="Lista de compras">
-            <p>Meu perfil</p>
-        </div>
+        <a routerLink="my-profile">
+            <div [ngClass]="{'selected': isPageActive('my-profile')}" class="step">
+                <img src="../../../assets/icon/stock-on-meu-perfil.svg" alt="Meu perfil">
+                <p>Meu perfil</p>
+            </div>
+        </a>
 
-        <div class="link">
-            <img src="../../../assets/icon/stock-on-sair.svg" alt="Lista de compras">
-            <p>Sair</p>
-        </div>
+        <a routerLink="login">
+            <div class="link">
+                <img src="../../../assets/icon/stock-on-sair.svg" alt="Sair">
+                <p>Sair</p>
+            </div>
+        </a>
     </div>
 </header>

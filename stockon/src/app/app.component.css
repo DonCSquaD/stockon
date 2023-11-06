@@ -1,8 +1,7 @@
 section {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
 }
 
-div {
-    padding: 4rem 5rem;
+section > div {
+    width: 100%;
 }
