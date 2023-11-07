@@ -5,6 +5,26 @@
     </div>
 
     <div class="page-card">
-        <app-card></app-card>
+        <div class="card-container" *ngFor="let card of data">
+            <img src="{{ card.thumb }}" alt="product-name" class="card-image">
+            <div class="info">
+                <h3>{{ card.name }}</h3>
+                <p>Marca: {{ card.brand }}</p>
+                <p>Peso: {{ card.weight }}</p>
+                <div class="color">
+                    <p>Cor: </p>
+                    <div style="background: {{ card.color }}"></div>
+                </div>
+                <p>Modelo: {{ card.model }}</p>
+            </div>
+            <div class="amount">
+                <h4>{{ card.amount }}</h4>
+                <p>Quantidade</p>
+            </div>
+            <div class="next">
+                <span class="material-symbols-outlined next-icon">arrow_circle_right</span>
+                <p>Enviar para estoque</p>
+            </div>
+        </div>
     </div>
 </div>

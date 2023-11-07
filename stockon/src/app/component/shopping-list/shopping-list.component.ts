@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../card/card.component';
 import { CardService } from 'src/app/service/card.service';
 
 @Component({

@@ -10,7 +10,6 @@ import { StockComponent } from './component/stock/stock.component';
 import { SignUpComponent } from './component/access/sign-up/sign-up.component';
 import { FormComponent } from './component/form/form.component';
 import { LoginComponent } from './component/access/login/login.component';
-import { CardComponent } from './component/card/card.component';
 import { ConfirmLoginComponent } from './component/access/confirm-login/confirm-login.component';
 import { MyProfileComponent } from './component/my-profile/my-profile.component';
 
@@ -23,7 +22,6 @@ import { MyProfileComponent } from './component/my-profile/my-profile.component'
     SignUpComponent,
     FormComponent,
     LoginComponent,
-    CardComponent,
     ConfirmLoginComponent,
     MyProfileComponent
   ],
