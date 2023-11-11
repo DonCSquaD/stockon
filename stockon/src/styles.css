@@ -16,7 +16,7 @@
 
 html {
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: .75vw;
 }
 
 a {
@@ -48,7 +48,6 @@ input:focus {
     grid-template-columns: 1fr 4fr 1fr 1fr;
     border: 1px solid var(--primary-color);
     border-radius: 1rem;
-    align-items: center;
 }
 
 .card-image {
@@ -60,6 +59,13 @@ input:focus {
 
 .info {
     padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info > p {
+    width: max-content;
 }
 
 .color {
@@ -73,9 +79,25 @@ input:focus {
     border-radius: .2rem;
 }
 
+.validity {
+    align-self: flex-end;
+    padding: .3rem .5rem;
+    border: 1px solid var(--third-color);
+    border-radius: .5rem;
+}
+
+.info,
+.amount {
+    border-right: 1px solid var(--third-color);
+    height: 100%;
+}
+
 .amount,
 .next {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .next-icon {
@@ -89,9 +111,9 @@ input:focus {
 .page-title {
     background: var(--third-color);
     display: flex;
-    align-items: center;
+    align-items: end;
     width: 100%;
-    padding: 4rem 4rem 2rem;
+    padding: 0vw 3vw 2vw;
     height: 15vh;
     justify-content: space-between;
 }
@@ -114,7 +136,7 @@ input:focus {
 @media screen and (max-width:768px) {
 
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }
@@ -122,7 +144,7 @@ input:focus {
 @media screen and (max-width:480px) {
 
     html {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }

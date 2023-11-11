@@ -20,7 +20,8 @@ export class AppComponent {
             currentUrl.includes('stock') ||
             currentUrl.includes('in-use') ||
             currentUrl.includes('finished') ||
-            currentUrl.includes('my-profile')) {
+            currentUrl.includes('my-profile') ||
+            currentUrl.includes('add-card')) {
           this.showHeader = true;
         } else {
           this.showHeader = false;

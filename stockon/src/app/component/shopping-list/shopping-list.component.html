@@ -1,7 +1,9 @@
 <div class="page-content">
     <div class="page-title">
         <h2>Lista de compras</h2>
-        <button>Adicionar produto</button>
+        <a routerLink="../add-card">
+            <button>Adicionar produto</button>
+        </a>
     </div>
 
     <div class="page-card">
@@ -16,6 +18,9 @@
                     <div style="background: {{ card.color }}"></div>
                 </div>
                 <p>Modelo: {{ card.model }}</p>
+                <div class="validity">
+                    Validade: {{ card.validity | slice:0:10 }}
+                </div>
             </div>
             <div class="amount">
                 <h4>{{ card.amount }}</h4>

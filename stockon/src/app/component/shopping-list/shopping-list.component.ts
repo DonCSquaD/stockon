@@ -13,13 +13,12 @@ export class ShoppingListComponent {
   constructor(private cardService: CardService) {}
 
   ngOnInit(): void {
-    this.loadData()  
+    this.loadData()
   }
 
   loadData(){
     this.cardService.getCards().subscribe( data => {
       this.data = data;
-      console.log(this.data)
     } )
   }
 

@@ -2,14 +2,14 @@ header {
     background: #141E32;
     height: 100vh;
     width: 18vw;
-    padding: 4rem;
     display: flex;
+    padding: 4rem;
     flex-direction: column;
     justify-content: space-between;
 }
 
 header > img {
-    width: 10rem;
+    width: 80%;
     margin: 0 auto;
 }
 
