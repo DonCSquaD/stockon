@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from 'src/app/model/card.model';
 
 @Component({
   selector: 'app-add-card',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AddCardComponent {
 
+  constructor() { }
+
+  voltar() {
+    window.history.back();
+  }
 }

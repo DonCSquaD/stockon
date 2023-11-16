@@ -1,1 +1,75 @@
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aspernatur veniam amet eos enim aperiam placeat ratione! Ducimus facere quas quam maiores voluptates excepturi, consequatur aperiam quod inventore neque aut.</p>
+<div class="page-content">
+    <div class="page-title">
+        <h2>Adicionar produto</h2>
+        <button class="cancel" (click)="voltar()">X</button>
+    </div>
+
+    <div class="page-card">
+        <h2>Adicionar produto</h2>
+        
+        <form action="">
+            <div class="container">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Digite o nome do produto">
+                </div>
+        
+                <div>
+                    <label for="brand">Marca:</label>
+                    <input type="text" id="brand" placeholder="Digite a marca do produto">
+                </div>
+                
+                <div>
+                    <label for="weight">Peso (kg):</label>
+                    <input type="number" id="weight" step="0.01" min="0.01" placeholder="Digite o peso do produto em kilos">
+                </div>
+
+                <div>
+                    <label for="model">Modelo:</label>
+                    <input type="text" id="model" placeholder="Digite o modelo do produto">
+                </div>
+            </div>
+
+            <div class="container">
+                <div>
+                    <p>Imagem:</p>
+                    <label class="upload-image" for="image">
+                        <span class="material-symbols-outlined upload-icon">add_photo_alternate</span>
+                    </label>
+                    <input id="image" type="file" accept="image/*">
+                </div>
+
+                <div class="sub-container">
+                    <div>
+                        <p>Cor:</p>
+                        <input type="color" id="color">
+                    </div>
+    
+                    <div>
+                        <label for="validity-date">Validade:</label>
+                        <input id="validity-date" type="date">  
+                    </div>
+    
+                    <div>
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" min="1" placeholder="Digite a quantidade">
+                    </div>
+    
+                    <div>
+                        <label for="purchase-date">Data de compra:</label>
+                        <input id="purchase-date" type="date">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="description">
+                <p>Descrição</p>
+                <textarea name="description" id="description" rows="10" placeholder="Faça uma descrição do produto"></textarea>
+            </div>
+            
+            <button class="submit" type="submit">Salvar</button>
+        </form>
+
+    </div>
+</div>

@@ -7,27 +7,30 @@
         <h2>Meu perfil</h2>
         
         <form action="">
-            <div>
+            <div class="container">
                 <div>
                     <label for="name">Nome:</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" placeholder="Digite seu nome">
                 </div>
         
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
                 </div>
         
                 <div>
                     <label for="biogray">Biografia:</label>
-                    <textarea name="biogray" id="biogray" rows="10"></textarea>
+                    <textarea name="biogray" id="biogray" rows="5" placeholder="Descreva você"></textarea>
                 </div>
             </div>
     
-            <div>
+            <div class="container">
                 <div>
-                    <label for="image">Foto de perfil:</label>
-                    <input type="file">
+                    <p>Foto de perfil:</p>
+                    <label class="upload-image" for="image">
+                        <span class="material-symbols-outlined upload-icon">add_photo_alternate</span>
+                    </label>
+                    <input id="image" type="file" accept="image/*">
                 </div>
     
                 <div>

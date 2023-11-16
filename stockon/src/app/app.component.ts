@@ -21,6 +21,7 @@ export class AppComponent {
             currentUrl.includes('in-use') ||
             currentUrl.includes('finished') ||
             currentUrl.includes('my-profile') ||
+            currentUrl.includes('card/create') ||
             currentUrl.includes('add-card')) {
           this.showHeader = true;
         } else {

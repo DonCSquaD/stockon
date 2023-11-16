@@ -18,7 +18,9 @@ const routes: Routes = [
   {path: 'confirm-login', component: ConfirmLoginComponent},
   {path: 'login', component: LoginComponent},
   {path: 'my-profile', component: MyProfileComponent},
-  {path: 'add-card', component: AddCardComponent},
+  {path: 'card/create', component: AddCardComponent},
+  {path: 'card/edit/:id', component: AddCardComponent},
+
 ];
 
 @NgModule({

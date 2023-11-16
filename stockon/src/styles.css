@@ -12,6 +12,7 @@
     --third-color: #000000;
     --fourth-color: #FFFFFF;
     --fifth-color: #FF0000;
+    --sixth-color: #D9D9D9;
 }
 
 html {
@@ -24,11 +25,17 @@ a {
     color: var(--fourth-color);
 }
 
-input {
-    border: none;
+h4 {
+    font-size: 2rem;
+}
+
+input,
+textarea {
+    border: 1px solid var(--sixth-color);
     outline: none;
     padding: 1rem 1.2rem;
     border-radius: .8rem;
+    resize: none;
 }
 
 button {
@@ -37,6 +44,8 @@ button {
     background: var(--secondary-color);
     color: var(--fourth-color);
     font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
 }
 
 input:focus {
@@ -118,11 +127,6 @@ input:focus {
     justify-content: space-between;
 }
 
-.page-title button {
-    padding: 1rem 2rem;
-    border-radius: .5rem;
-}
-
 .page-card {
     padding: 3rem 4rem;
     display: flex;
@@ -131,6 +135,75 @@ input:focus {
     height: 85vh;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+
+
+
+.page-card > h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+
+.container {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.description {
+    flex-basis: 100%;
+}
+
+.submit {
+    margin-left: auto;
+}
+
+.upload-image {
+    width: 100%;
+    border: 1px solid var(--sixth-color);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: .8rem;
+    margin-top: .3rem;
+    height: 10rem;
+    justify-content: center;
+}
+
+.upload-icon {
+    color: var(--sixth-color);
+    font-size: 5rem;
+}
+
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.sub-container > div {
+    flex-basis: 48%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="color"] {
+    width: 5rem;
+    font-size: 2rem;
+    padding: .5rem;
+    border-radius: 0;
+    height: 3rem;
 }
 
 @media screen and (max-width:768px) {

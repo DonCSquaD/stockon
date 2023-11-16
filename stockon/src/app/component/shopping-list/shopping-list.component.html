@@ -1,7 +1,7 @@
 <div class="page-content">
     <div class="page-title">
         <h2>Lista de compras</h2>
-        <a routerLink="../add-card">
+        <a routerLink="/card/create">
             <button>Adicionar produto</button>
         </a>
     </div>
@@ -12,7 +12,7 @@
             <div class="info">
                 <h3>{{ card.name }}</h3>
                 <p>Marca: {{ card.brand }}</p>
-                <p>Peso: {{ card.weight }}</p>
+                <p>Peso: {{ card.weight }}kg</p>
                 <div class="color">
                     <p>Cor: </p>
                     <div style="background: {{ card.color }}"></div>

@@ -1,0 +1,9 @@
+.cancel {
+    background: #F00;
+}
+
+input,
+textarea {
+    margin-top: .3rem;
+    width: 100%;
+}
