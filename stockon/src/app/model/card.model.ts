@@ -1,16 +1,18 @@
 export interface Card {
+
     createdAt: string,
     updatedAt: string,
-    user_id: number,
+    user_id: string,
     thumb: string,
     name: string,
     brand: string,
-    weight: number,
+    weight: string,
     color: string,
     model: string,
     validity: string,
-    amount: number,
-    state: number,
+    amount: string,
+    state: string,
     purchase_date: string,
-    id: number
+    id: string
+
 }

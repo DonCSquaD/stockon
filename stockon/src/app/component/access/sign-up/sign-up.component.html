@@ -5,7 +5,7 @@
     <div class="form">
         <h1>CADASTRO</h1>
 
-        <form action="/confirm-login">
+        <form (ngSubmit)="confirmLogin()">
             <div class="form-input">
                 <label for="name">Nome</label>
                 <input type="text" id="name" placeholder="Digite seu nome">

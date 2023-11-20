@@ -7,7 +7,7 @@
     </div>
 
     <div class="page-card">
-        <div class="card-container" *ngFor="let card of data">
+        <div class="card-container" *ngFor="let card of data" (contextmenu)="detectRightClick($event, card)">
             <img src="{{ card.thumb }}" alt="product-name" class="card-image">
             <div class="info">
                 <h3>{{ card.name }}</h3>
@@ -19,11 +19,11 @@
                 </div>
                 <p>Modelo: {{ card.model }}</p>
                 <div class="validity">
-                    Validade: {{ card.validity | slice:0:10 }}
+                    Validade: {{ card.validitydate | slice:0:10}}
                 </div>
             </div>
             <div class="amount">
-                <h4>{{ card.amount }}</h4>
+                <h4>{{ card.quantity }}</h4>
                 <p>Quantidade</p>
             </div>
             <div class="next">
@@ -31,5 +31,12 @@
                 <p>Enviar para estoque</p>
             </div>
         </div>
+    </div>
+    <div id="context-menu" class="context-menu" [ngStyle]="rightPanelStyle" (clickOutSide)="closeContextMenu()" (mouseleave)="closeContextMenu()">
+        <ul class="menu">
+            <li>Ver</li>
+            <li>Editar</li>
+            <li (click)="deleteCard()">Deletar</li>
+        </ul>
     </div>
 </div>
