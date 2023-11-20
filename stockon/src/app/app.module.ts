@@ -13,6 +13,7 @@ import { AddCardComponent } from './component/add-card/add-card.component';
 import { LoginComponent } from './component/access/login/login.component';
 import { ConfirmLoginComponent } from './component/access/confirm-login/confirm-login.component';
 import { MyProfileComponent } from './component/my-profile/my-profile.component';
+import { EditCardComponent } from './component/edit-card/edit-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MyProfileComponent } from './component/my-profile/my-profile.component'
     LoginComponent,
     ConfirmLoginComponent,
     MyProfileComponent,
+    EditCardComponent,
   ],
   imports: [
     BrowserModule,

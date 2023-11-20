@@ -2,24 +2,24 @@ ul {
     list-style: none;
 }
 
-.context-menu {
-    z-index: 10;
-    position: absolute;
-}
-
 .menu {
     display: flex;
     flex-direction: column;
     background: #EEE;
-    padding: 2rem 0;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #000;
 }
 
 .menu li {
-    border: 0;
-    padding: 1rem;
     width: 100%;
     display: flex;
     cursor: pointer;
     align-items: center;
+    font-size: inherit;
+}
 
+.menu li span {
+    padding-right: 1rem;
 }

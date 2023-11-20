@@ -16,8 +16,16 @@ export class CardService {
     return this.http.get<Card[]>(this.uriApi + '');
   }
 
+  getCard(id: string): Observable<any> {
+    return this.http.get<Card>(this.uriApi + id);
+  }
+
   createCard(data: any):Observable<any> {
     return this.http.post<any>(this.uriApi, data);
+  }
+
+  editCard(id: string, data:any):Observable<any> {
+    return this.http.put<any>(this.uriApi + id, data);
   }
 
   deleteCard(id: string):Observable<any> {

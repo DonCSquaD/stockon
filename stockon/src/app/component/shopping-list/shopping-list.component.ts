@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CardService } from 'src/app/service/card.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class ShoppingListComponent {
   currentRecord: any;
   card: any;
 
-  constructor(private cardService: CardService) {}
+  constructor(
+    private cardService: CardService,
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
     this.loadData();
@@ -24,6 +28,10 @@ export class ShoppingListComponent {
     this.cardService.getCards().subscribe( data => {
       this.data = data;
     } )
+  }
+
+  editCard() {
+    this.router.navigate(['/card/edit/' + this.card.id]);
   }
 
   deleteCard() {

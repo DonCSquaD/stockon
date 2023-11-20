@@ -22,7 +22,7 @@ export class AppComponent {
             currentUrl.includes('finished') ||
             currentUrl.includes('my-profile') ||
             currentUrl.includes('card/create') ||
-            currentUrl.includes('add-card')) {
+            currentUrl.includes('card/edit/')) {
           this.showHeader = true;
         } else {
           this.showHeader = false;

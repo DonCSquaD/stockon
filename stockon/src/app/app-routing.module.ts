@@ -7,6 +7,7 @@ import { LoginComponent } from './component/access/login/login.component';
 import { ConfirmLoginComponent } from './component/access/confirm-login/confirm-login.component';
 import { MyProfileComponent } from './component/my-profile/my-profile.component';
 import { AddCardComponent } from './component/add-card/add-card.component';
+import { EditCardComponent } from './component/edit-card/edit-card.component';
 
 const routes: Routes = [
   {path: '', component: SignUpComponent},
@@ -19,7 +20,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'my-profile', component: MyProfileComponent},
   {path: 'card/create', component: AddCardComponent},
-  {path: 'card/edit/:id', component: AddCardComponent},
+  {path: 'card/edit/:id', component: EditCardComponent},
 
 ];
 
