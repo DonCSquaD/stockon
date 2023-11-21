@@ -5,11 +5,11 @@ ul {
 .menu {
     display: flex;
     flex-direction: column;
-    background: #EEE;
+    background: var(--primary-color);
+    color: var(--fourth-color);
     gap: 1rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
-    box-shadow: 2px 2px 5px #000;
 }
 
 .menu li {
