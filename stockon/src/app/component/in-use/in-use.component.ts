@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { CardService } from 'src/app/service/card.service';
 import { Router } from '@angular/router';
+import { CardService } from 'src/app/service/card.service';
 
 @Component({
-  selector: 'app-stock',
-  templateUrl: './stock.component.html',
-  styleUrls: ['./stock.component.css']
+  selector: 'app-in-use',
+  templateUrl: './in-use.component.html',
+  styleUrls: ['./in-use.component.css']
 })
-export class StockComponent {
+export class InUseComponent {
 
   data: any[] = [];
   rightPanelStyle: any = {};

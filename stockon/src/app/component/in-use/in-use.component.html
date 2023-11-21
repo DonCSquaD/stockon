@@ -1,7 +1,6 @@
 <div class="page-content">
     <div class="page-title">
-        <h2>Estoque</h2>
-        <button>Adicionar produto</button>
+        <h2>Em uso</h2>
     </div>
 
     <div class="page-card">
@@ -26,10 +25,9 @@
             </div>
             <div class="next">
                 <span class="material-symbols-outlined next-icon">arrow_circle_right</span>
-                <p>Enviar para em uso</p>
+                <p>Enviar para finalizado</p>
             </div>
 
-            
             <div id="context-menu" class="context-menu" [ngStyle]="rightPanelStyle" (clickOutSide)="closeContextMenu()" (mouseleave)="closeContextMenu()">
                 <ul class="menu">
                     <li><span class="material-symbols-outlined">visibility</span>Ver</li>

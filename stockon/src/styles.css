@@ -52,6 +52,10 @@ input:focus {
     outline: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
@@ -135,6 +139,27 @@ input:focus {
     height: 85vh;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    color: var(--fourth-color);
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.menu li {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: inherit;
+}
+
+.menu li span {
+    padding-right: 1rem;
 }
 
 

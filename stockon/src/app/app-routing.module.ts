@@ -8,13 +8,15 @@ import { ConfirmLoginComponent } from './component/access/confirm-login/confirm-
 import { MyProfileComponent } from './component/my-profile/my-profile.component';
 import { AddCardComponent } from './component/add-card/add-card.component';
 import { EditCardComponent } from './component/edit-card/edit-card.component';
+import { InUseComponent } from './component/in-use/in-use.component';
+import { FinishedComponent } from './component/finished/finished.component';
 
 const routes: Routes = [
   {path: '', component: SignUpComponent},
   {path: 'shopping-list', component: ShoppingListComponent},
   {path: 'stock', component: StockComponent},
-  {path: 'in-use', component: StockComponent},
-  {path: 'finished', component: StockComponent},
+  {path: 'in-use', component: InUseComponent},
+  {path: 'finished', component: FinishedComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'confirm-login', component: ConfirmLoginComponent},
   {path: 'login', component: LoginComponent},
