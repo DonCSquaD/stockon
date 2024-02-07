@@ -33,6 +33,7 @@
             <div id="context-menu" class="context-menu" [ngStyle]="rightPanelStyle" (clickOutSide)="closeContextMenu()" (mouseleave)="closeContextMenu()">
                 <ul class="menu">
                     <li><span class="material-symbols-outlined">visibility</span>Ver</li>
+                    <li (click)="editCard()"><span class="material-symbols-outlined">edit</span>Editar</li>
                     <li (click)="deleteCard()"><span class="material-symbols-outlined">delete</span>Deletar</li>
                 </ul>
             </div>

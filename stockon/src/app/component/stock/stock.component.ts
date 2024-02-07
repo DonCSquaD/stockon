@@ -25,13 +25,17 @@ export class StockComponent {
   }
 
   loadData() {
-    this.cardService.getCardsStock().subscribe( data => {
+    this.cardService.getCards().subscribe( data => {
       this.data = data;
-    })
+    } )
+  }
+
+  editCard() {
+    this.router.navigate(['/card/edit/' + this.card.id]);
   }
 
   deleteCard() {
-    this.cardService.deleteCardStock(this.card.id).subscribe(
+    this.cardService.deleteCard(this.card.id).subscribe(
       (deleted: any) => {
         if (deleted) {
           this.loadData()
