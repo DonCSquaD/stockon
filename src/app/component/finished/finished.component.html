@@ -1,0 +1,36 @@
+<div class="page-content">
+    <div class="page-title">
+        <h2>Finalizado</h2>
+    </div>
+
+    <div class="page-card">
+        <div class="card-container" *ngFor="let card of data" (contextmenu)="detectRightClick($event, card)">
+            <img src="{{ card.thumb }}" alt="product-name" class="card-image">
+            <div class="info">
+                <h3>{{ card.name }}</h3>
+                <p>Marca: {{ card.brand }}</p>
+                <p>Peso: {{ card.weight }}kg</p>
+                <div class="color">
+                    <p>Cor: </p>
+                    <div style="background: {{ card.color }}"></div>
+                </div>
+                <p>Modelo: {{ card.model }}</p>
+                <div class="validity">
+                    Validade: {{ card.validitydate | slice:0:10}}
+                </div>
+            </div>
+            <div class="amount">
+                <h4>{{ card.quantity }}</h4>
+                <p>Quantidade</p>
+            </div>
+
+            <div id="context-menu" class="context-menu" [ngStyle]="rightPanelStyle" (clickOutSide)="closeContextMenu()" (mouseleave)="closeContextMenu()">
+                <ul class="menu">
+                    <li><span class="material-symbols-outlined">visibility</span>Ver</li>
+                    <li (click)="editCard()"><span class="material-symbols-outlined">edit</span>Editar</li>
+                    <li (click)="deleteCard()"><span class="material-symbols-outlined">delete</span>Deletar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

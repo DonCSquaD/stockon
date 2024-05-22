@@ -1,0 +1,60 @@
+.access {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--fourth-color);
+}
+
+.access-banner {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.form-input > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding: 1em 0;
+}
+
+a {
+    font-weight: bold;
+}

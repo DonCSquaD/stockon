@@ -1,0 +1,7 @@
+.card-container {
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.amount {
+    border-right: none;
+}

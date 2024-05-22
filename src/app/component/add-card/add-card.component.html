@@ -1,0 +1,76 @@
+<div class="page-content">
+    <div class="page-title">
+        <h2>Adicionar produto</h2>
+        <button class="cancel" (click)="voltar()">X</button>
+    </div>
+
+    <div class="page-card">
+        <h2>Adicionar produto</h2>
+
+        <form #cardForm="ngForm" (ngSubmit)="postCard(cardForm.value)">
+            <div class="container">
+                <div>
+                    <label for="name">Nome:</label> 
+                    <input name="name" [(ngModel)]="cardFormInput.name" type="text" id="name" placeholder="Digite o nome do produto">
+                </div>
+
+                <div>
+                    <label for="brand">Marca:</label>
+                    <input name="brand" [(ngModel)]="cardFormInput.brand" type="text" id="brand" placeholder="Digite a marca do produto">
+                </div>
+
+                <div>
+                    <label for="weight">Peso (kg):</label>
+                    <input name="weight" [(ngModel)]="cardFormInput.weight" type="number" id="weight" step="0.01" min="0.01" placeholder="Digite o peso do produto em kilos">
+                </div>
+
+                <div>
+                    <label for="model">Modelo:</label>
+                    <input name="model" [(ngModel)]="cardFormInput.model" type="text" id="model" placeholder="Digite o modelo do produto">
+                </div>
+            </div>
+
+            <div class="container">
+                <div>
+                    <p>Imagem:</p>
+                    <label class="upload-image" for="thumb">
+                        <span class="material-symbols-outlined upload-icon">add_photo_alternate</span>
+                    </label>
+                    <input name="thumb" [(ngModel)]="cardFormInput.thumb" id="thumb" type="text" placeholder="Insira o link da imagem">
+                    <!-- <input name="thumb" [(ngModel)]="cardFormInput.thumb" id="thumb" type="file" accept="image/*"> -->
+                </div>
+
+                <div class="sub-container">
+                    <div>
+                        <p>Cor:</p>
+                        <input name="color" [(ngModel)]="cardFormInput.color" type="color" id="color">
+                    </div>
+
+                    <div>
+                        <label for="validitydate">Validade:</label>
+                        <input name="validitydate" [(ngModel)]="cardFormInput.validitydate" id="validitydate" type="date">
+                    </div>
+    
+                    <div>
+                        <label for="quantity">Quantidade:</label>
+                        <input name="quantity" [(ngModel)]="cardFormInput.quantity" type="number" id="quantity" min="1" placeholder="Digite a quantidade">
+                    </div>
+    
+                    <div>
+                        <label for="purchasedate">Data de compra:</label>
+                        <input name="purchasedate" [(ngModel)]="cardFormInput.purchasedate" id="purchasedate" type="date">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="description">
+                <p>Descrição</p>
+                <textarea name="description" [(ngModel)]="cardFormInput.description" name="description" id="description" rows="10" placeholder="Faça uma descrição do produto"></textarea>
+            </div>
+            
+            <button class="submit" type="submit">Salvar</button>
+        </form>
+
+    </div>
+</div>

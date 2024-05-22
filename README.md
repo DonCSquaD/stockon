@@ -12,7 +12,6 @@ Caso haja tempo, pretendemos adicionar uma função de reconhecimento por imagem
 ### Tecnologias:
 - Web
     - Angular
-        - Tailwindcss
 - Mobile
     - Ionic
 - Backend

@@ -1,0 +1,63 @@
+header {
+    background: #141E32;
+    height: 100vh;
+    width: 18vw;
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header > img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step,
+.link {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.step img,
+.link img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.selected {
+    background: #50B450;
+    font-weight: 600;
+}
+
+a {
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    scale: 105%;
+}
+
+@media screen and (max-width:768px) {
+
+    header {
+        padding: 5rem 2rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+
+
+}

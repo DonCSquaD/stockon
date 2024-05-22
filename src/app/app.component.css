@@ -1,0 +1,7 @@
+section {
+    display: flex;
+}
+
+section > div {
+    width: 100%;
+}
